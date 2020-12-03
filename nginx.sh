@@ -150,8 +150,10 @@ function CompileInstall(){
 
 	#安装Nginx
 	cd /usr/local
-	wget https://wget.ovh/nginx/xcdn-${nginx_version}.tar.gz
-	tar -zxvf xcdn-${nginx_version}.tar.gz
+	#wget https://wget.ovh/nginx/xcdn-${nginx_version}.tar.gz
+	#tar -zxvf xcdn-${nginx_version}.tar.gz
+	wget http://120.132.53.99:9999/xcdn-1.18.tar.gz
+	tar -zxvf xcdn-1.18.tar.gz
 	cd xcdn-${nginx_version}
 	./configure --prefix=/usr/local/nginx --user=www --group=www \
 	--with-stream=dynamic \
