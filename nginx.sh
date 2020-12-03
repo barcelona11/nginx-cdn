@@ -273,6 +273,7 @@ case $istype in
     	chk_firewall
     	#安装jemalloc
     	#jemalloc,2020/11/09暂时去掉jemalloc
+	jemalloc
     	#安装依赖
     	depend
     	#安装nginx
@@ -282,6 +283,7 @@ case $istype in
     	check_os
     	get_ip
     	chk_firewall
+	jemalloc
     	#安装jemalloc
     	#jemalloc，2020/11/09暂时去掉jemalloc
     	BinaryInstall
